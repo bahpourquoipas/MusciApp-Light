@@ -1,0 +1,59 @@
+MusicApp light 1.0 — le prompteur seul, pour les anciennes tablettes
+====================================================================
+
+Pour un iPad mini 2 (iOS 12) ou toute tablette qui peine avec la version complète.
+Huit fois plus légère (64 Ko au lieu de 496 Ko). Les chansons s'affichent exactement comme dans la version
+complète : même rendu des accords, des repères, des couleurs et des grilles.
+
+CE QU'ELLE FAIT
+  - Bibliothèque et playlists : chercher, ouvrir une playlist, créer, renommer, supprimer une playlist,
+    y ajouter une chanson (＋), changer l'ordre (↑ ↓), retirer une chanson (✕).
+  - Prompteur : défilement automatique, Vitesse − / +, Taille − / +, Capo − / + (transposition à la volée),
+    chanson précédente / suivante dans l'ordre de la liste, plein écran quand l'iPad le permet.
+    Toucher le texte met en pause.
+  - Métronome : une mesure de décompte avant le départ (visuel, sonore ou les deux), puis, si vous le voulez,
+    un pulseur ou un clic pendant le morceau. Il suit le tempo et la mesure de chaque chanson.
+  - Petit éditeur (✎) : titre, artiste, tonalité, tempo, mesure, paroles et accords. « ＋ » en haut : nouvelle chanson.
+  - Import : une sauvegarde de la version complète, une playlist reçue, ou un export EasyZic (.ezp).
+  - Export : une sauvegarde que la version complète sait relire.
+  - Clavier ou pédale qui envoie des flèches : Espace = lecture / pause, ← → = chanson précédente / suivante,
+    ↑ ↓ et Page ↑ / Page ↓ = défilement (le mode le plus courant des pédales tourne-pages).
+
+CE QU'ELLE NE FAIT PAS (c'est le prix de la légèreté)
+  Réglage du pédalier, vue Grille seule, surbrillance de la ligne en cours et paroles minutées, partage par
+  QR code, mode Équipe, liens d'écoute, durée du set, doublons, impression. Les données correspondantes
+  (minutage, liens, réglages de grille…) sont gardées dans les fiches : un aller-retour vers la version
+  complète ne perd rien.
+
+1. LA METTRE EN LIGNE (une fois, sur un ordinateur)
+  ATTENTION : dans un DÉPÔT GITHUB À PART, pas dans un dossier de celui de la version complète.
+  (La version complète, déjà installée sur l'iPad, répondrait à sa place pour toute adresse sous la sienne.)
+  a. Créez un nouveau dépôt GitHub, par exemple « musicapp-light ».
+  b. Déposez-y les fichiers du dossier (index.html, sw.js, manifest.webmanifest, les 3 icônes),
+     tous au même niveau.
+  c. Settings → Pages → « Deploy from a branch », branche main, dossier « / (root) » → Save.
+     Adresse : https://votre-compte.github.io/musicapp-light/
+
+2. SUR L'IPAD MINI
+  a. Ouvrez cette adresse dans Safari, avec Internet.
+  b. Partager → Sur l'écran d'accueil : l'appli s'ouvre ensuite en plein écran, et marche sans réseau.
+  c. Réglages de l'iPad → Luminosité et affichage → Verrouillage automatique → Jamais.
+     Sans cela, l'écran s'éteint au milieu d'un morceau (iOS 12 ne laisse pas une page web l'empêcher).
+
+3. Y METTRE VOS CHANSONS
+  - Depuis la version complète (sur un autre appareil) : Réglages → Exporter. Envoyez le fichier sur l'iPad
+    mini (AirDrop, mail, iCloud Drive) et enregistrez-le dans l'app Fichiers. Dans MusicApp light :
+    ⚙︎ → Importer un fichier… → choisissez-le.
+  - Ou directement votre export EasyZic (.ezp) : il devient une playlist, dans l'ordre d'EasyZic.
+  - « Ajouter » met à jour les chansons déjà présentes (même titre, même artiste) et remplace une playlist
+    du même nom. « Tout remplacer » (sauvegarde seulement) remet la tablette exactement dans l'état du fichier.
+  Les chansons restent dans cette appli, à part de la version complète : rien ne se mélange.
+
+4. LIMITES CONNUES
+  - Export sur iOS 12 : Safari 12 ne sait pas enregistrer un fichier depuis une page. Le bouton ouvre le menu
+    de partage avec le texte de la sauvegarde (Mail, Notes…) ; sur un appareil plus récent, c'est un vrai fichier.
+  - L'appli installée sur l'écran d'accueil et Safari ont des données séparées : importez vos chansons dans
+    celle que vous utiliserez sur scène.
+  - Essais faits dans un navigateur qui imite Safari 12 (iOS 12) avec un processeur ralenti 4 fois, et avec
+    votre vraie bibliothèque EasyZic (115 chansons) : import en 0,4 s, la plus longue chanson affichée en 0,15 s.
+    Pas sur un vrai iPad mini 2 : faites un essai complet chez vous avant le concert.
